@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class Player : MonoBehaviour
 {
     //Speed Data
-    float m_maxSpeed = 120;
-    float m_minSpeed = 50;
+    float m_maxSpeed = 80;
+    float m_minSpeed = 20;
     public float p_speed = 5;
     public Vector2 p_movement;
     public bool p_boost;
     int m_dirLR = 0;
+
+    public Camera p_mainCamera;
+    //Movement freezing
+    bool m_freezeMovement = false;
+    float m_countdown = 1.0f; // time ull be frozen for
 
     //Score Data
     public float p_score = 0;
@@ -36,15 +42,18 @@ public class Player : MonoBehaviour
         }
 
         //detecting input for moving the player left and right
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && !m_freezeMovement)
         {
             m_dirLR = -1;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && !m_freezeMovement)
         {
             m_dirLR = 1;
         }
         if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            m_dirLR = 0;
+
+        if (m_freezeMovement)
             m_dirLR = 0;
 
         //detecting input for adjusting the speed value
@@ -60,12 +69,39 @@ public class Player : MonoBehaviour
         //increasing the score
         p_score += 1 * m_scoreMultiplier;
         p_movement = new Vector2((float)m_dirLR, p_speed);
+
+        if (m_freezeMovement)
+        {
+            m_countdown -= Time.deltaTime;
+            p_mainCamera.GetComponent<MotionBlur>().enabled = true;
+            p_mainCamera.GetComponent<VignetteAndChromaticAberration>().enabled = true;
+            p_mainCamera.GetComponent<ColorCorrectionCurves>().enabled = true;
+        }
+        else
+            m_countdown = 1.0f;
+
+        if (m_countdown <= 0)
+        {
+            m_freezeMovement = false;
+            p_mainCamera.GetComponent<MotionBlur>().enabled = false;
+            p_mainCamera.GetComponent<VignetteAndChromaticAberration>().enabled = false;
+            p_mainCamera.GetComponent<ColorCorrectionCurves>().enabled = false;
+        }
+
     }
+
 
     void OnCollisionEnter(Collision col)
     {
+        if (col.gameObject.name == "killBox")
+        {
+            Application.LoadLevel("NeonRacerProto");
+            print("DEAD!");
+        }
+
         if (col.gameObject.name == "P_BuildingA 1")
         {
+            m_freezeMovement = true;
             print("BUMP");
         }
     }
