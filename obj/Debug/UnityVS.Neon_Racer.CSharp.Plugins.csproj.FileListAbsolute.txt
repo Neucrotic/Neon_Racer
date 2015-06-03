@@ -1,0 +1,13 @@
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\tommas.solarino\Documents\Neon_Racer\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\tommas.solarino\Documents\Neon_Racer\obj\Debug\UnityVS.Neon_Racer.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\Users\tommas.solarino\Documents\Neon_Racer\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\tommas.solarino\Documents\Neon_Racer\obj\Debug\Assembly-CSharp-firstpass.pdb

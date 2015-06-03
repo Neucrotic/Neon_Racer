@@ -116,7 +116,7 @@ public class Player : MonoBehaviour
             print("DEAD!");
         }
 
-        if (col.gameObject.name == "P_BuildingA 1")
+        if (col.gameObject.name == "building1CloseBox" || col.gameObject.name == "building2CloseBox")
         {
             m_freezeMovement = true;
             print("BUMP");
