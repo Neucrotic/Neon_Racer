@@ -39,7 +39,7 @@ public class TerrainAMovement : MonoBehaviour {
         m_speed = p_player.GetComponent<Player>().p_movement.y;
 
         float oldVelocity = (m_speed * (Time.deltaTime * Time.deltaTime)) / 2;
-        float newVelocity ;
+        float newVelocity;
 
         float x = this.transform.position.x - p_player.GetComponent<Player>().p_movement.x * m_speed * Time.deltaTime;
         float y = this.transform.position.y;

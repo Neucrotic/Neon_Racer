@@ -5,8 +5,8 @@ using UnityStandardAssets.ImageEffects;
 public class Player : MonoBehaviour
 {
     //Speed Data
-    float m_maxSpeed = 80;
-    float m_minSpeed = 20;
+    float m_maxSpeed = 180;
+    float m_minSpeed = 80;
     public float p_speed = 5;
     public Vector2 p_movement;
     public bool p_boost = false;
@@ -15,8 +15,8 @@ public class Player : MonoBehaviour
 
     public Camera p_mainCamera;
     //Movement freezing
-    bool m_freezeMovement = false;
-    float m_countdown = 1.0f; // time ull be frozen for
+    public bool m_freezeMovement = false;
+    float m_countdown = 1.0f; // time you'll be frozen for
 
     //Score Data
     public float p_score = 0;

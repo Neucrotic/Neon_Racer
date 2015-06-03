@@ -1105,10 +1105,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p_player: {fileID: 1944215869}
   p_maxBuildings: 30
+--- !u!1 &332048396 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152992, guid: 2f84c5726a876a24c89b716fcf59b370, type: 2}
+  m_PrefabInternal: {fileID: 21402762}
+--- !u!114 &332048397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332048396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35e9686abc1ea64d803bfa68eba7052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p_breakable: 0
+  p_speedThreshold: 0
 --- !u!4 &367523903 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400058, guid: e066308c6e1ba1c44863fcf2c7bc3b91, type: 2}
   m_PrefabInternal: {fileID: 1423872879}
+--- !u!1 &383358776 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 188178, guid: 3104e9002f4320348bc77c2444627ac0, type: 2}
+  m_PrefabInternal: {fileID: 1807280808}
+--- !u!114 &383358778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 383358776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35e9686abc1ea64d803bfa68eba7052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p_breakable: 0
+  p_speedThreshold: 0
 --- !u!1001 &414099562
 Prefab:
   m_ObjectHideFlags: 0
@@ -4541,6 +4575,7 @@ MonoBehaviour:
   p_movement: {x: 0, y: 0}
   p_boost: 0
   p_mainCamera: {fileID: 160821489}
+  m_freezeMovement: 0
   p_score: 0
   p_missCounter: 0
 --- !u!1001 &1965298004
@@ -4628,7 +4663,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f03194003c0e1194b9c03de917ed0c7b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
