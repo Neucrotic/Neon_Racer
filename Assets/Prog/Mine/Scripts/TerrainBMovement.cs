@@ -7,7 +7,9 @@ public class TerrainBMovement : MonoBehaviour {
     public GameObject p_player;
     public int p_maxBuildings;
   
-    private GameObject m_building;
+    private GameObject m_building1;
+    private GameObject m_building2;
+
     private bool m_moveTerrainA = true; //is so that this script only moves terrain a once
     private float m_speed = 70;
     private float m_terrainLength = 400;
@@ -17,7 +19,8 @@ public class TerrainBMovement : MonoBehaviour {
 
 	void Start () 
     {
-        m_building = GameObject.Find("Building");
+        m_building1 = GameObject.Find("Building1");
+        m_building2 = GameObject.Find("Building2");
 	}
 	
 	// Update is called once per frame
@@ -77,9 +80,20 @@ public class TerrainBMovement : MonoBehaviour {
 
             Vector3 pos = new Vector3(x, 0, z);
 
+            float rand = Random.Range(0, 10);
+
             GameObject clone;
-            clone = Instantiate(m_building, pos, transform.rotation) as GameObject;
-            clone.transform.parent = this.transform;
+
+            if (rand <= 5)
+            {
+                clone = Instantiate(m_building1, pos, transform.rotation) as GameObject;
+                clone.transform.parent = this.transform;
+            }
+            if (rand > 5)
+            {
+                clone = Instantiate(m_building2, pos, transform.rotation) as GameObject;
+                clone.transform.parent = this.transform;
+            }
         }
     }
 }
