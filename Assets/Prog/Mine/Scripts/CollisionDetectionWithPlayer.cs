@@ -16,12 +16,6 @@ public class CollisionDetectionWithPlayer : MonoBehaviour
     {
         pos = this.transform.position;
 
-        if (transform.position.z <= 100)
-        {
-            //print("deleted");
-            //Destroy(this);
-        }
-
         m_player = GameObject.FindGameObjectWithTag("Player");
 
         float dist = Vector3.Distance(m_player.transform.position, this.transform.position);
