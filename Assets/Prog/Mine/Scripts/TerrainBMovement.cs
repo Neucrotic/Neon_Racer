@@ -67,9 +67,12 @@ public class TerrainBMovement : MonoBehaviour {
         float xPos = this.transform.position.x;
 
         //destroying prev building to stop repeating
-        var children = new List<GameObject>();
-        foreach ( Transform child in this.transform)
-            Destroy(child.gameObject);
+        var children = new List<GameObject>(); 
+        foreach (Transform child in this.transform)
+        {
+            if (child.name == "Building1" || child.name == "Building2")
+                Destroy(child.gameObject);
+        }
 
         float halfWidth = m_terrainWidth / 2;
 
