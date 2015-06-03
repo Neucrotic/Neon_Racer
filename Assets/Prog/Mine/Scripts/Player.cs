@@ -9,7 +9,8 @@ public class Player : MonoBehaviour
     float m_minSpeed = 20;
     public float p_speed = 5;
     public Vector2 p_movement;
-    public bool p_boost;
+    public bool p_boost = false;
+    int m_boostCounter = 0;
     int m_dirLR = 0;
 
     public Camera p_mainCamera;
@@ -64,6 +65,22 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             p_speed -= 0.354f;
+        }
+
+        //detecting/applying boost and score multiplier
+        if (p_boost)
+        {
+
+
+            m_boostCounter = 1;
+            if (m_boostCounter >= 2)
+            {
+                m_scoreMultiplier = m_boostCounter;
+            }
+        }
+        else if(!p_boost)
+        {
+            m_boostCounter = 0;
         }
 
         //increasing the score

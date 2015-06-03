@@ -1,0 +1,13 @@
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\nelson.hain\Desktop\STUFF\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\nelson.hain\Desktop\STUFF\obj\Debug\UnityVS.STUFF.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\Users\nelson.hain\Desktop\STUFF\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\nelson.hain\Desktop\STUFF\obj\Debug\Assembly-CSharp-firstpass.pdb
